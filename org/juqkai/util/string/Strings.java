@@ -78,4 +78,22 @@ public class Strings {
 			return -1d;
 		}
 	}
+	/**
+	 * 第一个字母大写
+	 * @param str
+	 * @return
+	 * @author juqkai(juqkai@gmail.com) 2010-10-25
+	 */
+	public static String capitalize(String str){
+		if(str == null){
+			return null;
+		}
+		if(str.equals("") || str.length() == 0){
+			return "";
+		}
+		StringBuilder sb = new StringBuilder();
+		sb.append(Character.toUpperCase(str.charAt(0)));
+		sb.append(str.substring(1));
+		return sb.toString();
+	} 
 }
