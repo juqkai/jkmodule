@@ -132,7 +132,7 @@ public class Mirror <T> {
 				return m;
 			}
 		}catch (NoSuchMethodException e){
-			throw new NoSuchMethodException();
+			throw new NoSuchMethodException("field \"" + name + "\" no such getter method!");
 		}
 	}
 	/**
