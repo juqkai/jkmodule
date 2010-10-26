@@ -174,7 +174,11 @@ public class Mirror <T> {
 	public boolean is(Class<?> type) {
 		return null != type && zlass == type;
 	}
-	
+
+	public Method[] getMethods() {
+		return zlass.getDeclaredMethods();
+	}
+
 	
 
 }
